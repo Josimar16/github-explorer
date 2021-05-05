@@ -16,8 +16,8 @@ export const RepositoryList = () => {
     <section className="repository-list">
       <h1>Lista de repositórios</h1>
       <ul>
-        {repositories && repositories.map(repository => 
-          <RepositoryItem repository={repository} />  
+        {repositories && repositories.map((repository, index) => 
+          <RepositoryItem key={index} repository={repository} />  
         )}
       </ul>
     </section>
